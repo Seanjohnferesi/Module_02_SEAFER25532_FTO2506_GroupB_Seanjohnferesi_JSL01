@@ -1,6 +1,8 @@
 
 body{
     margin: 0;
+    padding-left: 302px;
+    background-color: #E4EBFA;
 }
 
 @layer Sidebar{
@@ -8,6 +10,10 @@ body{
     nav{
         width: 300px;
         height: 1024px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: white;
     }
 
     .logo-wrapper{
@@ -48,5 +54,67 @@ body{
 }
 
 @layer Header{
+    header{
+        box-sizing: border-box;
+        width: 1140px;
+        height: 96px;
+        padding-left: 25px;
+        background-color: white;
+        padding-top: 25px;
+    }
+
+     h2{
+        font-size: 24px;
+        color: #000112;
+        margin: 0;
+    }
+}
+
+@layer Main{
     
+    main{
+        padding-left: 25px;
+    }
+
+    @layer TODO{
+
+        .todo-list-container{
+            width: 280px;
+        }
+
+        .todo-list{
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .todo-list > span{
+            width: 15px;
+            height: 15px;
+            background-color: #49C4E5;
+            display: inline-block;
+            border-radius: 100%;
+        }
+
+        .todo-flex-container > div{
+            box-sizing: border-box;
+            width: 280px;
+            height: 60px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px 0 #364E7E1A;
+            /*styling for the text inside the div*/   
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #000112;
+        }
+
+        .todo-flex-container{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
 }
