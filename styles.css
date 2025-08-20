@@ -2,7 +2,7 @@
 body{
     margin: 0;
     padding-left: 302px;
-    background-color: #E4EBFA;
+    background-color: #F4F7FD;
     font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
 }
 
@@ -241,18 +241,33 @@ body{
         padding-top: 64px
     }
 
+     nav{
+            width: 375px;
+            height: 64px;
+    }
+
     main{
         flex-direction: column;
     }
 
-    @layer Nav{
-        .boards-container, header{
+    .boards-container, header{
             display: none;
-        }
+    }
 
-        nav{
-            width: 375px;
-            height: 64px;
-        }
+   
+    .todo-list, .doing-list, .done-list{
+        margin-bottom: 15px
+    }
+
+    .todo-flex-container > div{
+        width: 320px;
+    }
+    
+    .doing-flex-container > div{
+        width: 320px;
+    }
+
+    .done-flex-container > div{
+        width: 320px;
     }
 }
