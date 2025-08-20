@@ -96,6 +96,14 @@ body{
             border-radius: 100%;
         }
 
+        .todo-list > h4{
+            font-size: 12px;
+            letter-spacing: 2.4px;
+            line-height: 1;
+            font-weight: 700;
+            color: #828FA3;
+        }
+
         .todo-flex-container > div{
             box-sizing: border-box;
             width: 280px;
@@ -109,9 +117,112 @@ body{
             font-weight: 700;
             letter-spacing: 1px;
             color: #000112;
+            cursor: pointer;
         }
 
         .todo-flex-container{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    @layer DOING{
+
+        .doing-list-container{
+            width: 280px;
+        }
+
+        .doing-list{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .doing-list > span{
+            width: 15px;
+            height: 15px;
+            background-color: #8471F2;
+            display: inline-block;
+            border-radius: 100%;
+        }
+
+        .doing-list > h4{
+            font-size: 12px;
+            letter-spacing: 2.4px;
+            line-height: 1;
+            font-weight: 700;
+            color: #828FA3;
+        }
+
+        .doing-flex-container > div{
+            box-sizing: border-box;
+            width: 280px;
+            height: 60px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px 0 #364E7E1A;
+            /*styling for the text inside the div*/   
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #000112;
+            cursor: pointer;
+        }
+
+        .doing-flex-container{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+
+    @layer DONE{
+
+        .done-list-container{
+            width: 280px;
+        }
+
+        .done-list{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .done-list > span{
+            width: 15px;
+            height: 15px;
+            background-color: #67E2AE;
+            display: inline-block;
+            border-radius: 100%;
+        }
+
+        .done-list > h4{
+            font-size: 12px;
+            letter-spacing: 2.4px;
+            line-height: 1;
+            font-weight: 700;
+            color: #828FA3;
+        }
+
+        .done-flex-container > div{
+            box-sizing: border-box;
+            width: 280px;
+            height: 60px;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px 0 #364E7E1A;
+            /*styling for the text inside the div*/   
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            color: #000112;
+            cursor: pointer;
+        }
+
+        .done-flex-container{
             display: flex;
             flex-direction: column;
             gap: 20px;
