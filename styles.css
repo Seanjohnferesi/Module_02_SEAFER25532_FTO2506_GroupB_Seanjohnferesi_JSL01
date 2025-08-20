@@ -1,0 +1,52 @@
+
+body{
+    margin: 0;
+}
+
+@layer Sidebar{
+
+    nav{
+        width: 300px;
+        height: 1024px;
+    }
+
+    .logo-wrapper{
+        padding: 16px 25px;
+    }
+
+    .app-name{
+        width: 113px;
+        height: 25px;
+        margin-left: 5px;
+    }
+
+    .app-logo{
+        width: 25px;
+        height: 24px;
+    }
+
+    .boards-container > h4{
+        padding-left: 25px;
+        color: #828FA3;
+        letter-spacing: 2.4px;
+        font-size: 12px;
+    }
+
+    .boards-container > button{
+        width: 276px;
+        height: 48px;
+        border: none;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+        background-color: #635FC7;
+        color: white;
+        font-size: 15px;
+        font-weight: 700;
+        padding-right: 50px;
+    }
+
+}
+
+@layer Header{
+    
+}
