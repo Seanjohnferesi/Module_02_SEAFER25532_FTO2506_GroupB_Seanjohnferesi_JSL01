@@ -3,7 +3,8 @@ body{
     margin: 0;
     padding-left: 302px;
     background-color: #F4F7FD;
-    font-family: "Plus Jakarta Sans", Arial, Helvetica, sans-serif;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 1rem;
 }
 
 @layer Sidebar{
@@ -15,10 +16,11 @@ body{
         top: 0;
         left: 0;
         background-color: white;
+        border-right: 1px solid #e4ebfa
     }
 
     .logo-wrapper{
-        padding: 16px 25px;
+        margin: 33px 113px 54px 34px;
     }
 
     .app-name{
@@ -33,23 +35,27 @@ body{
     }
 
     .boards-container > h4{
-        padding-left: 25px;
+        padding: 0 12px 0 50px;
         color: #828FA3;
         letter-spacing: 2.4px;
         font-size: 12px;
     }
 
     .boards-container > button{
+        box-sizing: border-box;
         width: 276px;
         height: 48px;
+        padding: 28px 12px 28px 50px; 
         border: none;
         border-top-right-radius: 100px;
         border-bottom-right-radius: 100px;
         background-color: #635FC7;
         color: white;
-        font-size: 15px;
-        font-weight: 700;
-        padding-right: 50px;
+        font-family: inherit;
+        font-size: 0.9375rem;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
     }
 
 }
@@ -59,13 +65,16 @@ body{
         box-sizing: border-box;
         height: 96px;
         background-color: white;
-        padding: 25px;
+        padding-left: 30px;
         display: flex;
         align-items: center;
+        border-bottom: 1px solid #E4EBFA;
     }
 
      h2{
-        font-size: 24px;
+        font-family: inherit;
+        font-size:  1.5rem;
+        font-weight: 600;
         color: #000112;
         margin: 0;
     }
@@ -74,7 +83,8 @@ body{
 @layer Main{
     
     main{
-        padding: 25px 0 0 25px;
+        box-sizing: border-box;
+        padding-left: 35px;
         display: flex;
         gap: 25px
     }
@@ -111,14 +121,16 @@ body{
             box-sizing: border-box;
             width: 280px;
             height: 60px;
-            padding: 20px;
+            display: flex;
+            align-items: center;
+            padding-left: 15px;
             background-color: white;
-            border-radius: 8px;
+            border-radius: 12px;
             box-shadow: 0 4px 6px 0 #364E7E1A;
             /*styling for the text inside the div*/   
-            font-size: 15px;
-            font-weight: 700;
-            letter-spacing: 1px;
+            font-size: 0.9375rem;
+            font-family: inherit;
+            font-weight: bold;
             color: #000112;
             cursor: pointer;
             transition: width 0.3s;
@@ -261,6 +273,12 @@ body{
             gap: 20px;
         }
     }
+}
+
+/*=============
+   Tablet View*/
+@media screen and (max-width: 1023px) {
+    
 }
 
  /*MOBILE VIEW*/
